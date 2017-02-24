@@ -1,0 +1,42 @@
+/*HEADER*/
+.top{
+     color: white;
+    padding-top: 10px;
+    padding-left: 3px;
+    background: white;
+    height: 25vh;
+}
+.logo{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 2vh;
+    background: black;
+    height: 20vh;
+    margin-left: 7%;
+ 
+}
+
+/*nav*/
+nav{
+    padding-left: 1vh;
+}
+
+nav div{
+    
+   
+    display: inline-block;
+    background: black;
+    margin: 10px;
+    
+    height: 7vh;
+    width: 35%;
+   text-align: center;
+    padding-top: 1vh;
+    
+}
+/*border*/
+.dark-border{
+    height: 2px;
+    width: 100%;
+    background: black;
+}
