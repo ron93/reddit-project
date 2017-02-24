@@ -40,3 +40,17 @@ nav div{
     width: 100%;
     background: black;
 }
+
+
+/*MY WORK*/
+#work{
+    margin-top: 2vh;
+}
+h2{
+    text-align: center;
+}
+.project{
+   background: black;
+    height: 30vh;
+    border: 1px solid white;
+}
