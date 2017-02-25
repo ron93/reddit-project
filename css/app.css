@@ -61,17 +61,26 @@ h2{
 }
 
 /*CONTACT*/
+
 #contact{
-      height: 50vh;
+    padding-top: 2vh;
+      height: 70vh;
 background: black;
     color: white;
   
-    padding-top:5vh;
-    padding-left: 15%;
+   
 }
 
 /*form*/
-#contact .form{
-    height: 30vh;
+.form{
+    height: 55vh;
     border: 1px solid white;
+     margin-top:5vh;
+    margin-left: 8.7%;
+}
+
+/*FOOTER*/
+.footer{
+    height: 10vh;
+    background: green;
 }
