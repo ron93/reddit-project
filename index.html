@@ -19,8 +19,9 @@
     
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+<!--    <link href="css/bootstrap/bootstrap.css" rel="stylesheet">-->
 
+    <link rel="stylesheet" href="css/nav.css">
 
    <!-- FAV AND TOUCH ICONS   -->
        <link rel="stylesheet" href="icons/styles.css">
@@ -44,61 +45,62 @@
 </head>
 
 <body>
-    <div class="container">
+<!--    <div class="wrapper">-->
+   <!--header-->
+	<header class="row">
+        
+        <div class="col-md-4 social">
+        
+        
+        </div>
+<!--title-->
+        
+        <div  class="col-md-4 col-xs-4 title">	
+        <h1><a href="/">Ron</a></h1>
+        </div>
+
+<!--        nav-->
+        <div class="col-md-4">
+<nav>
+		<ul class="pl-primary-nav">
+			<li><a href="#0">My Work</a></li>
+			<li><a href="#0">About</a></li>
+			<li><a href="#0">contact</a></li>
+		</ul>
+	</nav>
+
+        </div>
+    </header>
+      <main class="pl-content">
     
-    <div class="top">
-    <header>
-<!--        logo-->
-        <div class="col-md-2 col-xs-3 logo">Ron<br>Yagan</div>
-<!--    nav-->
-     <nav class="col-md-8 col-xs-8">
-         <div>HOME</div>
-         <div>WORK</div>
-         <div>ABOUT</div>
-         <div>CONTACT</div>
-   
-        </nav>  
-        
-        
-        
-        </header>
-    </div>
-<!--   border-->
-        <div class="dark-border"></div>
-        
-        <div id="work">
-            <h2>MY WORK</h2>
-            <div></div>
-            <div class="list">
-            <div class="col-xs-6 project"></div>
-            <div class="col-xs-6 project"></div>
-            <div class="col-xs-6 project"></div>
-            <div class="col-xs-6 project"></div>
-            </div>
-        
-        
-        </div>
-<!--        contact-->
-        <div id="contact" class="col-xs-12">
-            <h2>CONTACT</h2>
-        <div class="col-xs-10 form"></div>
-        </div>
-        
-<!--        footer-->
-        <div class="col-xs-12 footer">
-        <div id="about"></div>
-        <div id="bottom"></div>
-        </div>
-        
+    
+    
+    </main>  
+
+
+      
+    
+    
+<!--  =========-->
+    <div class="pl-overlay-nav">
+		<span></span>
+	</div> <!-- pl-overlay-nav -->
+
+	<div class="pl-overlay-content">
+		<span></span>
+	</div> <!-- pl-overlay-content -->
+<a href="#0" class="pl-nav-trigger">Menu<span class="pl-icon"></span></a>
+
     
 
-    </div>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/velocity.min.js"></script>
+    <script src="js/main.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<!--    <script src="js/bootstrap.min.js"></script>-->
 <!--    material design js-->
 <!--    <script  src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.2.0/js/mdb.min.js"></script>-->
 
