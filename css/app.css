@@ -13,32 +13,64 @@ Primary style
   content: '';
 }
 
+
+html, body {
+  height: 100%;
+
+}
+
 body {
 /*  font-size: 100%;*/
   font-family: "PT Sans", sans-serif;
-  color: #091d23;
+  color: #fff;
   background-color: #ffff;
 }
 
 a {
-  color: #1e6074;
+  color: #fff;
   text-decoration: none;
 }
 
-
-html, body {
-  height: 100%;
+/*backgrounds*/
+.header-background {
+    background: #000936;
+    height: 4em;
+    
+}
+.banner-background{
+    height: 30em;
+}
+.about-background {
+    background: #000750;
+    height: 25em;
+}
+.work-background {
+    background:#001270;
+    height: 25em;
+}
+.contact-background {
+    background: #0030a3;
+    height: 30em;
 }
 
-header {
+
+/*
+#000936
+#000750
+#001270
+#0030a3
+#0044bd
+*/
+
+
+
+
+
+/*heAder*/
+
+.header {
     text-align: center;
-  z-index: 3;
-    background: #FCDB00;
-    height: 40em;
-    width: 100%;
-}
-.pl-nav-trigger {
-  position: fixed;
-  display: inline-block;
-}
+    
+    
 
+}
