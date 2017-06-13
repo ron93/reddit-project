@@ -22,55 +22,24 @@ html, body {
 body {
 /*  font-size: 100%;*/
   font-family: "PT Sans", sans-serif;
-  color: #fff;
-  background-color: #ffff;
+/*  color: #fff;*/
+  background-color: #1D1D1D;
+    
 }
 
 a {
-  color: #fff;
+  color: #AD7735;
   text-decoration: none;
 }
 
-/*backgrounds*/
-.header-background {
-    background: #000936;
-    height: 4em;
-    
+/*header*/
+.title {
+    border: 3px solid #AD7735;
+    height: 10em;
 }
-.banner-background{
-    height: 30em;
-}
-.about-background {
-    background: #000750;
-    height: 25em;
-}
-.work-background {
-    background:#001270;
-    height: 25em;
-}
-.contact-background {
-    background: #0030a3;
-    height: 30em;
-}
-
-
-/*
-#000936
-#000750
-#001270
-#0030a3
-#0044bd
-*/
-
-
-
-
-
-/*heAder*/
-
-.header {
+p {
     text-align: center;
+    font-size: 30px;
+    color: #fff;
     
-    
-
 }
