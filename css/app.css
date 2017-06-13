@@ -16,6 +16,7 @@ Primary style
 
 html, body {
   height: 100%;
+    overflow-x: hidden;
 
 }
 
@@ -74,18 +75,16 @@ h1,h2,h3 {
     margin-top: 2em;
 }
 .work {
-    height: 20em;
-    margin-left: 8.33%;
+    height: 40em;
     
 }
-.work > div {
+ .work > .row > div {
 /*    margin-top: 3em;*/
     height: 13em;
     background: #363636;
-    margin-right: 7.4%;
-}
 
-/*CONTACT
+/*CONTACT*/
+     
 .contact {
     height: 20em;
 }

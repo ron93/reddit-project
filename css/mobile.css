@@ -5,17 +5,37 @@
 
 
 @media only screen and (min-width: 768px) {
-  
+    
+    .work {
+ /* problem!!!!*/
+        margin-left: 9.33%;
+    }
+  .work > .row > div {
+
+    margin-right: 7.4%;
+}
+.work .mid {
+    margin-top: 4em;
+}
+.work .row-one {
+    margin-bottom: 2em;
+}
+
 }
 
 /*width 320px*/
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
 /*    header*/
     .name {
         font-size: 40px;
     }
     
+/*      WORK */
+    .work > .row > div {
+        margin-bottom: 1em;
+        margin: 4%;
+    }
   
 }
 /* Landscape */
