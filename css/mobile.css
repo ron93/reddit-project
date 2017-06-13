@@ -1,5 +1,10 @@
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1024px) {
+/*    work  */
+       .work {
+ /* problem!!!!*/
+        margin-left: 9.33%;
+    }
   
 }
 
@@ -7,8 +12,7 @@
 @media only screen and (min-width: 768px) {
     
     .work {
- /* problem!!!!*/
-        margin-left: 9.33%;
+        margin-left: 2%;
     }
   .work > .row > div {
 

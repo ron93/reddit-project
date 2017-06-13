@@ -29,7 +29,7 @@ body {
 }
 
 a {
-  color: #AD7735;
+/*  color: #AD7735;*/
   text-decoration: none;
 }
 h1,h2,h3 {
@@ -59,20 +59,27 @@ h1,h2,h3 {
     font-size: 15px;
 }
 /*MAIN*/
+
 .about ,.contact {
     background-color: #363636;
 /*    margin-top: 2em;*/
 }
+h2 {
+    font-size: 25px;
+}
 
 /*ABOUT*/
+#about {
+    height: 25em;
+}
 .about {
-    
+    margin-top: 2em;
     height: 20em;
 }
 
 /*WORK*/
 #work {
-    margin-top: 2em;
+/*    margin-top: 2em;*/
 }
 .work {
     height: 40em;
@@ -82,9 +89,28 @@ h1,h2,h3 {
 /*    margin-top: 3em;*/
     height: 13em;
     background: #363636;
-
+}
 /*CONTACT*/
-     
+#contact {
+    height: 30em;
+}
 .contact {
     height: 20em;
+}
+/*form*/
+/*social*/
+.social div {
+    margin-left: 7%;
+}
+.social a {
+/*
+    height: 2em;
+    width: 2em;
+*/
+    border: 1px solid  #AD7735;
+    padding: 15px;
+    margin-left: 3em;
+}
+.social i {
+    color:  #AD7735;
 }
