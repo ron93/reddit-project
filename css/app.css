@@ -58,6 +58,8 @@ h1,h2,h3 {
 .job {
     font-size: 15px;
 }
+
+
 /*MAIN*/
 
 .about ,.contact {
@@ -68,6 +70,7 @@ h2 {
     font-size: 25px;
 }
 
+
 /*ABOUT*/
 #about {
     height: 25em;
@@ -76,6 +79,8 @@ h2 {
     margin-top: 2em;
     height: 20em;
 }
+
+
 
 /*WORK*/
 #work {
@@ -90,6 +95,8 @@ h2 {
     height: 13em;
     background: #363636;
 }
+
+
 /*CONTACT*/
 #contact {
     height: 30em;
