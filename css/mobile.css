@@ -13,9 +13,19 @@
  /* problem!!!!*/
         margin-left: 9.33%;
     }
+    
 }
 
 @media only screen and (min-width: 768px) {
+/*    header*/
+ .name {
+    font-size: 50px;
+}
+.job {
+    font-size: 15px;
+}
+
+    
     
     .work {
  /* problem!!!!*/
@@ -31,6 +41,7 @@
 .work .row-one {
     margin-bottom: 2em;
 }
+    
 
 }
 

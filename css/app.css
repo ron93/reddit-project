@@ -52,12 +52,14 @@ h1,h2,h3 {
     color: #fff;
 }
 
+/*
 .name {
     font-size: 50px;
 }
 .job {
     font-size: 15px;
 }
+*/
 
 
 /*MAIN*/
@@ -94,8 +96,17 @@ h2 {
 /*    margin-top: 3em;*/
     height: 13em;
     background: #363636;
+     width: 80%;
 }
-
+/*proj*/
+.proj {
+    background: #88552B;
+    opacity: 0.9;
+    height: 13em;
+    width: 100%;
+    margin-top: 1.5em;
+/*    margin-left: 1em;*/
+}
 
 /*CONTACT*/
 #contact {
@@ -119,5 +130,5 @@ h2 {
     margin-left: 3em;
 }
 .social i {
-    color:  #AD7735;
+    color:  #88552B;
 }
