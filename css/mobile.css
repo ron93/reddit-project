@@ -17,31 +17,85 @@
 }
 
 @media only screen and (min-width: 768px) {
-/*    header*/
- .name {
+/*  ============  HEADER ==============*/
+    .name {
     font-size: 50px;
-}
-.job {
+    }
+    .job {
     font-size: 15px;
+    }
+    
+/*   ======== ABOUT ======*/
+    
+/*    technologies */
+    .tech {
+    height: 25em;
+/*    width: 30%;*/
+    background: #88552B;
+    z-index: 8;
+    top: -2.5em;
 }
 
-    
+
+/*  ========  WORK==========*/
     
     .work {
- /* problem!!!!*/
-/*        margin-left: 1%;*/
+            height: 40em;
+            margin-top: 1em;
+
     }
   .work > .row > div {
-
-    margin-right: 7.4%;
-}
-.work .mid {
-    margin-top: 4em;
-}
-.work .row-one {
+            height: 13em;
+            margin-right: 7.4%;
+    }
+    .work .mid {
+        margin-top: 4em;
+    }
+    .work .row-one {
     margin-bottom: 2em;
+    }
+    .proj {
+    height: 13em;
+    margin-top: 1.5em;
+    }
+
+/* =========== CONTACT =========== */
+#contact {
+    height: 40em;
+}
+.contact {
+    height: 25em;
+    margin-top: 5em;
 }
     
+    .social {
+    margin-left: 1em;
+    height: 30em;
+    background: #88552B;
+    top: -2.5em;
+    z-index: 9;
+    padding-top: 4em;
+
+}
+
+
+.links i {
+    width: 40%;
+    height: 3em;
+    margin: 2%;
+    margin-left: 6%;
+    padding-top: 40px;
+    color: #363636;
+    font-size: 50px;
+    text-align: center;
+	position: relative;
+	z-index: 1;
+}
+.links i:hover {
+    background: #363636;
+    color: #ffffff;
+
+}
 
 }
 
