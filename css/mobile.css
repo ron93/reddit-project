@@ -18,6 +18,9 @@
 
 @media only screen and (min-width: 768px) {
 /*  ============  HEADER ==============*/
+    .header {
+    height: 20em;
+    }
     .name {
     font-size: 50px;
     }
@@ -106,7 +109,14 @@
 /*width 320px*/
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
-/*    header*/
+/*  ======== HEADER ======*/
+    .header {
+    height: 15em;
+    }
+    .title {
+        width: 90%;
+        margin-left: 5%;
+    }
     .name {
         font-size: 40px;
     }
