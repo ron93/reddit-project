@@ -35,7 +35,8 @@ a {
 h1,h2 {
     color: #AD7735;
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
+/*    margin-top: 1em;*/
 }
 
 /*HEADER*/
@@ -83,6 +84,11 @@ h2 {
     height: 20em;
 }
 
+.about-me {
+    padding-left: 10%;
+    padding-top: 3%;
+    color: #ffffff;
+}
 
 /*WORK*/
 #work {
