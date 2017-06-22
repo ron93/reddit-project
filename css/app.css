@@ -75,13 +75,19 @@ h2 {
 
 /*ABOUT*/
 #about {
-    height: 25em;
+    height: 30em;
 }
 .about {
-    margin-top: 2em;
+    margin-top: 4em;
     height: 20em;
 }
-
+.tech {
+    height: 25em;
+    width: 30%;
+    background: #88552B;
+    z-index: 8;
+    top: -2.5em;
+}
 
 
 /*WORK*/
@@ -90,13 +96,12 @@ h2 {
 }
 .work {
     height: 40em;
+    margin-top: 1em
     
 }
  .work > .row > div {
-/*    margin-top: 3em;*/
     height: 13em;
     background: #363636;
-     width: 80%;
 }
 /*proj*/
 .proj {
