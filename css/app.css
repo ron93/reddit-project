@@ -83,7 +83,7 @@ h2 {
 }
 .tech {
     height: 25em;
-    width: 30%;
+/*    width: 30%;*/
     background: #88552B;
     z-index: 8;
     top: -2.5em;
@@ -96,7 +96,7 @@ h2 {
 }
 .work {
     height: 40em;
-    margin-top: 1em
+    margin-top: 1em;
     
 }
  .work > .row > div {
@@ -119,21 +119,35 @@ h2 {
 }
 .contact {
     height: 20em;
+    margin-top: 4em;
 }
-/*form*/
+
 /*social*/
-.social div {
-    margin-left: 7%;
+.social {
+    height: 25em;
+    background: #88552B;
+    top: -2.5em;
+    z-index: 9;
+    padding-top: 3em;
+
 }
-.social a {
-/*
-    height: 2em;
-    width: 2em;
-*/
-    border: 1px solid  #AD7735;
-    padding: 15px;
-    margin-left: 3em;
+
+
+.links i {
+    width: 40%;
+    height: 3em;
+    margin: 2%;
+    margin-left: 6%;
+    padding-top: 40px;
+    color: #363636;
+    font-size: 50px;
+    text-align: center;
+	position: relative;
+	z-index: 1;
 }
-.social i {
-    color:  #88552B;
+.links i:hover {
+    background: #363636;
+    color: #ffffff;
+
 }
+
