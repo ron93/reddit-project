@@ -116,17 +116,13 @@ h2 {
 form {
 	position: relative;
 	overflow: hidden;
-    margin-left: 10%;
-    margin-top: 1em;
+  
 }
 input {
-    width: 80%;
     background: #363636;
-    margin-bottom:20px;
     border: 2px solid #88552B;
 }
 textarea {
-    width: 80%;
     background: #363636;
     border: 2px solid #88552B;
 
