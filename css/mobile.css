@@ -135,10 +135,19 @@ textarea {
         font-size: 40px;
     }
 /*  ====ABOUT===  */
+    
     .about {
         width: 90%;
         margin-left: 5%;
     }
+    .tech {
+        height: 8em;
+        width: 50%;
+        top: -2em;
+        background: #88552B;
+        margin-left: 25%;
+    }
+    
     
     
 /*   ======  WORK ======  */
