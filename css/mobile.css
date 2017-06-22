@@ -45,7 +45,6 @@
 
     }
   .work > .row > div {
-            height: 13em;
             margin-right: 7.4%;
     }
     .work .mid {
@@ -55,7 +54,6 @@
     margin-bottom: 2em;
     }
     .proj {
-    height: 13em;
     margin-top: 1.5em;
     }
 
@@ -106,12 +104,29 @@
     .name {
         font-size: 40px;
     }
-    
-/*      WORK */
-    .work > .row > div {
-        margin-bottom: 1em;
-        margin: 4%;
+/*  ====ABOUT===  */
+    .about {
+        width: 90%;
+        margin-left: 5%;
     }
+    
+    
+/*   ======  WORK ======  */
+    .work > .row > div {
+        margin-bottom: 2em;
+        margin-top: 1em;
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .proj {
+      
+    margin-top: 1.5em;
+    }
+    
+    
+    
+    
   
 }
 /* Landscape */
