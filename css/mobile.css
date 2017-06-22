@@ -41,11 +41,16 @@
 
 
 /*  ========  WORK==========*/
-    
+    #work {
+
+    }
     .work {
-            height: 40em;
+/*            height: 40em;*/
             margin-top: 1em;
 
+    }
+    .work > .row {
+        margin-bottom:  3em;
     }
   .work > .row > div {
             margin-right: 7.4%;
