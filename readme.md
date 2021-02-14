@@ -3,7 +3,8 @@
 
 *running project*
 *create virtualenv*
-`virtualenv ven`
+`virtualenv venv`
+*activate virtualenv* `source venv/bin/activate`
 
 *create storage location for data*
 `mkdir Praw/data/csv && Praw/mkdir data/images`
