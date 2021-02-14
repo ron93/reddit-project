@@ -9,3 +9,15 @@ class SubredditScrapper:
             f'SubredditScraper instance created with values '
             f'sub = {sub}, sort = {sort}, lim = {lim}, mode = {mode}'
         )
+
+    def set_sort(self):
+        if self.sort == 'new':
+            return self.sort, reddit.subreddit(self.sub).new(limit=self.lim)
+        elif self.sort == 'top':
+            return self.sort, reddit.subreddit(self.sub).top(limit=self.lim)
+        elif self.sort == 'hot':
+            return self.sort, reddit.subreddit(self.sub).hot(limit=self.lim)
+        else:
+            self.sort = 'hot'
+            print('Sort method was not recognized, defaulting to hot.')
+            return self.sort, reddit.subreddit(self.sub).hot(limit=self.lim)
