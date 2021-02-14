@@ -1,13 +1,16 @@
+
+import os
 from os.path import isfile
 import praw
-from praw import Reddit
 import pandas as pd 
 from time import sleep
+import requests
+import urllib.request
 
 #get credentiald from DEFAULT instance of praw.ini
 reddit = praw.Reddit()
 
-class SubredditScrapper:
+class SubredditScraper:
     def __init__(self, sub, sort='new', lim=900, mode='w'):
         self.sub = sub
         self.sort = sort 
@@ -34,22 +37,33 @@ class SubredditScrapper:
     def get_posts(self):
         """get unique posts from a specified subreddit"""
         sub_dict = {
-            'selftext':[],"title":[],"id":[],"sorted_by":[],"num_comments":[],"score" :[], "ups":[], "downs":[]
-        }
-        csv = f'{self.sub}_post.csv'
+            'selftext':[],"title":[],"id":[],"sorted_by":[],"num_comments":[],"score" :[], "ups":[], "downs":[] ,"url":[]
+            }
+        images = os.listdir('data/images/')
+        csv_file = os.listdir('data/csv/')
+        csv = 'data/csv/' f'{self.sub}_post.csv'
+        #todo: create sub-reddit image folder--->
+        image_file = 'data/images/' + f'{self.sub}_pics'
         
         #sorting method 
         sort, subreddit = self.set_sort()
 
         #set csv loaded to true 
         df , csv_loaded = (pd.read_csv(csv), 1) if isfile(csv) else('',0)
+        #--->
+        iFile_loaded = os.listdir('image_file') if isfile(image_file) else('',0)
         
-        print(f'csv = {csv}')
-        print(f'After set_sort(), sort = {sort} and sub = {self.sub}')
-        print(f'csv_loaded = {csv_loaded}')
 
+        print(f'csv = {csv}')
+        #--->
+        print(f'image file = {image_file}')
+        print(f'After set_sort(), sort = {sort} and sub = {self.sub}')
+
+        print(f'csv_loaded = {csv_loaded}')
+        print(f'image file loaded = {iFile_loaded}')
         print(f'Collecting information from r/{self.sub}.')
 
+        count = 0
         for post in subreddit:
 
         # Check if post.id is in df and set to True if df is empty.
@@ -66,12 +80,29 @@ class SubredditScrapper:
                 sub_dict['score'].append(post.score)
                 sub_dict['ups'].append(post.ups)
                 sub_dict['downs'].append(post.downs)
+                sub_dict['url'].append(post.url)
             sleep(0.1)
 
 
             new_df = pd.DataFrame(sub_dict)
+            url = post.url
 
             # Add new_df to df if df exists then save it to a csv.
+            # Check if the link is an image
+            if url.endswith("jpg") or url.endswith("jpeg") or url.endswith("png"):
+
+                # Retrieve the image and save it in current folder
+                response = urllib.request.urlopen(url)
+                #response = requests.get(url)
+                img = response.read()
+                with open(str(image_file)+str(post.id)+'.jpg','wb') as f:
+                    f.write(img)
+
+                # Stop once you have 10 images
+                if count == 10:
+                    break
+
+
             if 'DataFrame' in str(type(df)) and self.mode == 'w':
                 pd.concat([df, new_df], axis=0, sort=0).to_csv(csv, index=False)
                 print(
@@ -85,7 +116,7 @@ class SubredditScrapper:
                     f'added to {csv} because mode was set to "{self.mode}"')
 if __name__ == '__main__':
     SubredditScraper(
-        'python',
+        'earthporn',
          lim=997,
          mode='w',
          sort='new').get_posts()
