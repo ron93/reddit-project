@@ -83,3 +83,9 @@ class SubredditScrapper:
                 print(
                     f'{len(new_df)} posts were collected but they were not '
                     f'added to {csv} because mode was set to "{self.mode}"')
+if __name__ == '__main__':
+    SubredditScraper(
+        'python',
+         lim=997,
+         mode='w',
+         sort='new').get_posts()
