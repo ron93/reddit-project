@@ -1,0 +1,141 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::after, *::before {
+  content: '';
+}
+
+
+html, body {
+  height: 100%;
+    overflow-x: hidden;
+
+}
+
+body {
+/*  font-size: 100%;*/
+  font-family: "PT Sans", sans-serif;
+/*  color: #fff;*/
+  background-color: #1D1D1D;
+    
+}
+
+a {
+/*  color: #AD7735;*/
+  text-decoration: none;
+}
+h1,h2 {
+    color: #AD7735;
+    text-align: center;
+    margin-bottom: 1.5em;
+/*    margin-top: 1em;*/
+}
+
+/*HEADER*/
+.header {
+
+}
+/*title*/
+.title {
+    border: 3px solid #88552B;
+    height: 10em;
+}
+.title p {
+    text-align: center;
+    color: #fff;
+}
+
+/*
+.name {
+    font-size: 50px;
+}
+.job {
+    font-size: 15px;
+}
+*/
+
+
+/*MAIN*/
+
+.about ,.contact {
+    background-color: #363636;
+/*    margin-top: 2em;*/
+}
+h2 {
+    font-size: 25px;
+}
+
+
+/*ABOUT*/
+#about {
+    height: 30em;
+
+}
+.about {
+    margin-top: 4em;
+    height: 20em;
+}
+
+.about-me {
+    padding-left: 10%;
+    padding-top: 3%;
+    color: #ffffff;
+}
+
+/*WORK*/
+#work {
+/*    margin-top: 2em;*/
+}
+.work {
+    
+}
+ .work > .row > div {
+    background: #363636;
+     height: 13em;
+
+}
+/*proj*/
+.proj {
+    background: #88552B;
+    opacity: 0.9;
+    width: 100%;
+    height: 13em;
+
+}
+.proj h3 {
+    padding-top: 25%; 
+    text-align: center;
+
+}
+
+/*CONTACT*/
+
+
+/*social*/
+
+
+/*form*/
+
+form {
+	position: relative;
+	overflow: hidden;
+  
+}
+input {
+    background: #363636;
+    border: 2px solid #88552B;
+}
+textarea {
+    background: #363636;
+    border: 2px solid #88552B;
+
+}
+
