@@ -39,11 +39,12 @@ class SubredditScraper:
         sub_dict = {
             'selftext':[],"title":[],"id":[],"sorted_by":[],"num_comments":[],"score" :[], "ups":[], "downs":[] ,"url":[]
             }
-        images = os.listdir('data/images/')
-        csv_file = os.listdir('data/csv/')
-        csv = 'data/csv/' f'{self.sub}_post.csv'
+            #-->start debug
+        images = os.listdir('../../data/images/')
+        csv_file = os.listdir('../../data/csv/')
+        csv = '../../data/csv/' f'{self.sub}_post.csv'
         #todo: create sub-reddit image folder--->
-        image_file = 'data/images/' + f'{self.sub}_pics'
+        image_file = '../../data/images/' + f'{self.sub}_pics'
         
         #sorting method 
         sort, subreddit = self.set_sort()
