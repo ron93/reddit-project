@@ -1,6 +1,6 @@
 import requests
 from telegram import *
-from  telegram.ext import *
+from  telegram.ext import CommandHandler, Updater, CallbackContext
 import re
 import yaml
 import os
@@ -11,23 +11,16 @@ import os
 base_path = os.path.dirname(os.path.abspath(__file__))
 config = yaml.load(open(os.path.join(base_path,'config.yaml')).read(),Loader=yaml.FullLoader)
 token=config['general']['token']
+
 bot = Bot(token)
 
-def get_url():
-    contents = requests.get('https://random.dog/woof.json').json()    
-    url = contents['url']
-    return url
 
-def bop(bot, update):
-    url = get_url()
-    chat_id = update.message.chat_id
-    bot.send_photo(chat_id=chat_id, photo=url)
 
-def test(update:Update,context:CallbackContext):
-    bot.send_message(
-        chat_id = update.effective_chat.id,
-        text = "test sucessful!!",
-    )
+def test(update:Update, context:CallbackContext):
+    chat_id = update.effective_chat.id
+
+    bot.send_photo(chat_id=chat_id, photo=open('../data/piv.jpg', 'rb'))
+
 
 def main():
     
