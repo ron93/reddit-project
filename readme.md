@@ -4,6 +4,7 @@
 *running project*
 *create virtualenv*
 `virtualenv venv`
+
 *activate virtualenv* `source venv/bin/activate`
 
 *create storage location for data*
