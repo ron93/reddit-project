@@ -6,9 +6,11 @@ import pandas as pd
 from time import sleep
 import requests
 import urllib.request
+from pathlib import Path
 
 #get credentiald from DEFAULT instance of praw.ini
 reddit = praw.Reddit()
+csv_file = Path('../data/csv/')
 
 class SubredditScraper:
     def __init__(self, sub, sort='new', lim=900, mode='w'):
@@ -40,28 +42,21 @@ class SubredditScraper:
             'selftext':[],"title":[],"id":[],"sorted_by":[],"num_comments":[],"score" :[], "ups":[], "downs":[] ,"url":[]
             }
             #-->start debug
-        images = os.listdir('../../data/images/')
-        csv_file = os.listdir('../../data/csv/')
-        csv = '../../data/csv/' f'{self.sub}_post.csv'
+    #    csv_file = os.listdir('../../data/csv/')
+        csv = os.path.join(csv_file, f'{self.sub}_post.csv')
         #todo: create sub-reddit image folder--->
-        image_file = '../../data/images/' + f'{self.sub}_pics'
         
         #sorting method 
         sort, subreddit = self.set_sort()
 
         #set csv loaded to true 
         df , csv_loaded = (pd.read_csv(csv), 1) if isfile(csv) else('',0)
-        #--->
-        iFile_loaded = os.listdir('image_file') if isfile(image_file) else('',0)
         
 
         print(f'csv = {csv}')
-        #--->
-        print(f'image file = {image_file}')
         print(f'After set_sort(), sort = {sort} and sub = {self.sub}')
 
         print(f'csv_loaded = {csv_loaded}')
-        print(f'image file loaded = {iFile_loaded}')
         print(f'Collecting information from r/{self.sub}.')
 
         count = 0
@@ -87,21 +82,6 @@ class SubredditScraper:
 
             new_df = pd.DataFrame(sub_dict)
             url = post.url
-
-            # Add new_df to df if df exists then save it to a csv.
-            # Check if the link is an image
-            if url.endswith("jpg") or url.endswith("jpeg") or url.endswith("png"):
-
-                # Retrieve the image and save it in current folder
-                response = urllib.request.urlopen(url)
-                #response = requests.get(url)
-                img = response.read()
-                with open(str(image_file)+str(post.id)+'.jpg','wb') as f:
-                    f.write(img)
-
-                # Stop once you have 10 images
-                if count == 10:
-                    break
 
 
             if 'DataFrame' in str(type(df)) and self.mode == 'w':
