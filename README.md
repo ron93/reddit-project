@@ -13,7 +13,7 @@ This is a Reddit data project.
 **Reddit data extraction with Praw**
 - scrape reddit data using reddit api python wrapper 
 
-**Airflow Data pipeline**
+**Apache Airflow Data pipeline**
 - Data sharing between tasks
 - store data in Postgresql database
 
