@@ -1,6 +1,21 @@
-This is a stackoverflow data project workflow built with Apache Airflow and stack_overflow api.
+This is a Reddit data project.
+
+**Telegram bot**
+- send command with `r/subreddit` to scrape
+- store data in a csv
+- return data to bot user
+- return `r/subreddit` analystics
+- 
+**Reddit data analysis**
+- 
+
+**Reddit data extraction with Praw**
+- scrape reddit data using reddit api python wrapper 
+
+**Airflow Data pipeline**
+- Data sharing between tasks
+- store data in Postgresql database
 
 
 
-The goal is to set up a data pipeline to get a fresh portion of Stack Overflow questions , store them in a database and visualize the questions.
 
