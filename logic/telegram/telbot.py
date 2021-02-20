@@ -17,7 +17,7 @@ bot = Bot(token)
 
 def get_reddit():
     r = []
-    with open("../data/csv/earthporn_post.csv", "r") as f:
+    with open("../../data/csv/earthporn_post.csv", "r") as f:
         reader = csv.reader(f, delimiter="\t")
         for i, line in enumerate(reader):
             r.append(line)
@@ -26,7 +26,7 @@ def get_reddit():
 def test(update:Update, context:CallbackContext):
     chat_id = update.effective_chat.id
     
-    bot.send_photo(chat_id=chat_id, photo=open('../data/piv.jpg', 'rb'))
+    bot.send_photo(chat_id=chat_id, photo=open('../../data/piv.jpg', 'rb'))
 
 def reddits(update:Update,context:CallbackContext):
     

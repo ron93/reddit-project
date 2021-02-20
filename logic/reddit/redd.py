@@ -10,7 +10,7 @@ from pathlib import Path
 
 #get credentiald from DEFAULT instance of praw.ini
 reddit = praw.Reddit()
-csv_file = Path('../data/csv/')
+csv_file = Path('../../data/csv/')
 
 class SubredditScraper:
     def __init__(self, sub, sort='new', lim=900, mode='w'):
@@ -59,7 +59,6 @@ class SubredditScraper:
         print(f'csv_loaded = {csv_loaded}')
         print(f'Collecting information from r/{self.sub}.')
 
-        count = 0
         for post in subreddit:
 
         # Check if post.id is in df and set to True if df is empty.
@@ -81,7 +80,6 @@ class SubredditScraper:
 
 
             new_df = pd.DataFrame(sub_dict)
-            url = post.url
 
 
             if 'DataFrame' in str(type(df)) and self.mode == 'w':
