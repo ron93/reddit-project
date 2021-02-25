@@ -7,9 +7,8 @@ from airflow.operators.python_operator import PythonOperator
 
 #from utils import insert_question, write_questions_to_s3, render_template
 
-from logic import reddit
-from reddit.stream import listener
-from reddit.redd import SubredditScraper
+from src.trial import trial
+
 
 default_args = {
     "owner": "me",
@@ -32,12 +31,12 @@ with DAG("reddit_data", default_args=default_args) as dag:
 
 
     Task_II = PythonOperator(
-        task_id="hello", python_callable=listener.save_in_db()
+        task_id="hello", python_callable= hello
     )
 
 
     Task_I= PythonOperator(
-        task_id="bye", python_callable=bye
+        task_id="try", python_callable=trial
         )
 
 Task_II >> Task_I
