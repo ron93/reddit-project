@@ -38,6 +38,9 @@ def subred(self, text='worldnews'):
     print('sub',subreddit)
     return subreddit
 
+def get_stream():
+    subreddit = reddit.subreddit('worldnews')
+    return subreddit
 def save_in_db():
 
         #subreddit = self.subred()
@@ -118,7 +121,7 @@ cur.execute('''CREATE TABLE IF NOT EXISTS threads
 conn.commit()
 
 #redditlistern = listener()
-
+"""
 while True:
     try:
         print("Listening ...")
@@ -128,5 +131,5 @@ while True:
         del_from_db()
     except Exception as e:
         print(str(e))
-
+"""
 conn.close()

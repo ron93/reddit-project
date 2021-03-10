@@ -20,6 +20,7 @@ urllib3 = "==1.26.3"
 websocket_client = "==0.57.0"
 vadersentiment = "*"
 psycopg2 = "*"
+apache-airflow = {extras = ["celery"], version = "*"}
 
 [dev-packages]
 
