@@ -15,7 +15,7 @@ This is a Reddit data project.
 
 **Apache Airflow Data pipeline**
 - Data sharing between tasks
-- store data in Postgresql database
+- store data in PostgreSQL database
 
 
 
