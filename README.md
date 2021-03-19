@@ -14,8 +14,7 @@ This is a Reddit data project.
 - scrape reddit data using reddit api python wrapper 
 
 **Apache Airflow Data pipeline**
-- Data sharing between tasks
-- store data in PostgreSQL database
+- Schedule data pipeline
 
 
 
