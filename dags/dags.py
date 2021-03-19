@@ -15,7 +15,8 @@ from airflow.models.serialized_dag import SerializedDagModel
 def start_task():
     pass
 
-def save_in_db():
+def save_topics():
+    #save data to Kafka topics: Posts and Comments
     pass
 
 def del_from_db():
@@ -45,6 +46,7 @@ with DAG("reddit_data", default_args=default_args) as dag:
         if not SerializedDagModel.get(dag_id):
             dag = dag_bag.get_dag(dag_id)
             SerializedDagModel.write_dag(dag)
+            
     Task_I = PythonOperator(
         task_id="save_in_db",
         python_callable=save_in_db
