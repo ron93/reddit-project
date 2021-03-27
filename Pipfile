@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pytest-mock = "~=3.2.0"
+apache-airflow = {extras = ["postgres"], version = "*"}
+pytest = "*"
+ipdb = "*"
+pytest-helpers-namespace = "*"
+pytest-docker-tools = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
