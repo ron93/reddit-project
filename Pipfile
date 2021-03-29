@@ -4,12 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+ipdb = "~=0.13.3"
+pytest-helpers-namespace = "~=2019.1.8"
 pytest-mock = "~=3.2.0"
-apache-airflow = {extras = ["postgres"], version = "*"}
-pytest = "*"
-ipdb = "*"
-pytest-helpers-namespace = "*"
-pytest-docker-tools = "*"
+pytest = "~=5.4.3"
+pytest-docker-tools = "~=0.2.2"
+apache-airflow = {extras = ["cncf.kubernetes"], version = "*"}
 
 [dev-packages]
 
